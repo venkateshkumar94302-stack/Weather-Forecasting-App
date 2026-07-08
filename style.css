@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page background (will be overridden dynamically by JS) */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+}
+
+/* Main card */
+.weather-card {
+    background: white;
+    width: 320px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.weather-card h2 {
+    margin-bottom: 15px;
+}
+
+/* Search box */
+.search-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-box button {
+    padding: 8px 12px;
+    border: none;
+    background: #4facfe;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #007bff;
+}
+
+/* °C / °F toggle button (OPTIONAL FEATURE) */
+#unitBtn {
+    margin-bottom: 12px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: none;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#unitBtn:hover {
+    background: #444;
+}
+
+/* Weather info section */
+.weather-info {
+    margin-top: 10px;
+}
+
+/* Weather icon (OPTIONAL FEATURE) */
+#weatherIcon {
+    display: block;
+    margin: 10px auto;
+    width: 64px;
+}
+
+/* Temperature */
+.weather-info .temp {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Weather condition text */
+.condition {
+    font-style: italic;
+    color: #555;
+}
+
+/* Loader text */
+#loader {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Error message */
+#error {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #e74c3c;
+}
