@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather-card">
+        <h2>My Weather App</h2>
+
+        <!-- Search box -->
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Unit toggle button (DAY-4) -->
+        <button id="unitBtn">°F</button>
+
+        <!-- Weather info -->
+        <div class="weather-info">
+
+            <!-- Weather Icon -->
+            <img
+                id="weatherIcon"
+                src=""
+                alt="weather icon"
+                style="display:none; width:64px; margin:10px auto;"
+            >
+
+            <!-- Loader -->
+            <p id="loader" style="display:none; font-weight:bold;">Loading...</p>
+
+            <!-- Error message -->
+            <p id="error" style="display:none; color:#e74c3c;"></p>
+
+            <h3 id="cityName">City Name</h3>
+            <p class="temp" id="temperature">--°C</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="wind">Wind Speed: -- km/h</p>
+            <p class="condition" id="condition">--</p>
+
+        </div>
+    </div>
+
+    <!-- JS must be at bottom -->
+    <script src="script.js"></script>
+
+</body>
+</html>
